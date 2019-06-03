@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_corner_radii">56dp</dimen>
+    <dimen name="default_badge_corner_radii">16dp</dimen>
+    <dimen name="default_nav_item_padding">12dp</dimen>
+    <dimen name="default_nav_item_text_size">14sp</dimen>
+    <dimen name="default_nav_item_text_padding">8dp</dimen>
+    <dimen name="default_nav_item_title_max_width">80dp</dimen>
+    <dimen name="default_icon_size">24dp</dimen>
+    <dimen name="diary_icon_size">45dp</dimen>
+    <dimen name="default_nav_item_badge_padding">2dp</dimen>
+    <dimen name="default_nav_item_badge_text_size">7sp</dimen>
+    <dimen name="paddingTop">15dp</dimen>
+
+    <!-- Brush sizes -->
+    <dimen name="small_brush">10dp</dimen>
+    <integer name="small_size">10</integer>
+    <dimen name="medium_brush">20dp</dimen>
+    <integer name="medium_size">20</integer>
+    <dimen name="large_brush">30dp</dimen>
+    <integer name="large_size">30</integer>
+</resources>

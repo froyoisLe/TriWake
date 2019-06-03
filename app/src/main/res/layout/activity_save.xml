@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/note_primary"
+    android:layout_height="match_parent"
+    tools:context=".ui.painting.SaveActvity">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageButton
+                android:layout_marginLeft="16dp"
+                android:id="@+id/back_drawing"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:visibility="visible"
+                android:background="@drawable/bg_bar"
+                android:src="@drawable/ic_arrow_back_black_36dp"
+                android:scaleType="centerCrop"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/easy_draw"
+                android:text="请欣赏您的大作"
+                android:textSize="25dp"
+                android:textColor="@color/note_dark_bg"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+           <ImageView
+               android:id="@+id/show_drawing"
+               android:layout_marginTop="16dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:padding="20dp"
+               android:background="@drawable/bg_bar"
+               android:src="@drawable/bg_bar"
+               android:scaleType="fitXY"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="top"
+            android:weightSum="2"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/new_drawing"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="60dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:background="@drawable/bg_bar"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_create"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:text="再画一幅"
+                    android:gravity="center"
+                    android:layout_marginLeft="-2dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/bg_bar"
+                    android:textColor="@color/note_dark_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/download"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:background="@drawable/bg_bar"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_file_download_black_36dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:text="保存本地"
+                    android:gravity="center"
+                    android:layout_marginLeft="-2dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/bg_bar"
+                    android:textColor="@color/note_dark_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

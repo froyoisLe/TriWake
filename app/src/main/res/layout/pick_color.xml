@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="175dp"
+    android:layout_gravity="center"
+    android:padding="6dp"
+    android:weightSum="3"
+    android:background="@drawable/bg_pickcolor"
+    android:orientation="vertical"
+    android:layout_height="135dp">
+
+    <LinearLayout
+        android:id="@+id/pick_color"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_black"
+            android:padding="4dp"
+            android:src="@drawable/circle_black"
+            android:onClick="colorChoose"
+            android:tag="#333333"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_white"
+            android:padding="4dp"
+            android:src="@drawable/circle_white"
+            android:onClick="colorChoose"
+            android:tag="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_red"
+            android:padding="4dp"
+            android:src="@drawable/circle_red"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:onClick="colorChoose"
+            android:tag="#EF4B4A"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_pink"
+            android:padding="4dp"
+            android:src="@drawable/circle_pink"
+            android:onClick="colorChoose"
+            android:tag="#F06F8E"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_yellow"
+            android:padding="4dp"
+            android:onClick="colorChoose"
+            android:tag="#F8DA58"
+            android:src="@drawable/circle_yellow"
+            android:layout_weight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_orange"
+            android:padding="4dp"
+            android:src="@drawable/circle_orange"
+            android:layout_weight="1"
+            android:onClick="colorChoose"
+            android:tag="#F6911F"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_skyblue"
+            android:padding="4dp"
+            android:src="@drawable/circle_skyblue"
+            android:layout_weight="1"
+            android:onClick="colorChoose"
+            android:tag="#75CEE0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_oceanblue"
+            android:padding="4dp"
+            android:onClick="colorChoose"
+            android:tag="#237197"
+            android:src="@drawable/circle_oceanblue"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_lightgreen"
+            android:padding="4dp"
+            android:onClick="colorChoose"
+            android:tag="#66C08A"
+            android:src="@drawable/circle_lightgreen"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_grassgreen"
+            android:padding="4dp"
+            android:onClick="colorChoose"
+            android:tag="#5FA044"
+            android:src="@drawable/circle_grassgreen"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_darkgreen"
+            android:padding="4dp"
+            android:src="@drawable/circle_darkgreen"
+            android:layout_weight="1"
+            android:onClick="colorChoose"
+            android:tag="#004F49"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/color_purple"
+            android:padding="4dp"
+            android:onClick="colorChoose"
+            android:tag="#654B94"
+            android:src="@drawable/circle_purple"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

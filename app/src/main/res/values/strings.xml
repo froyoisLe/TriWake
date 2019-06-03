@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TriWake</string>
+
+    <string name="triwake">T r i W a k e</string>
+    <string name="CopyRight">© 2019 IsLeti. All rights reserved. </string>
+    <string name="wrsxws">吾日 三省 吾身</string>
+
+    <string name="home">反思</string>
+    <string name="search">搜索</string>
+    <string name="todo">待办</string>
+    <string name="notes">笔记</string>
+    <string name="account">记账</string>
+    <string name="diary">日记</string>
+    <string name="back">Back</string>
+    <string name="categoryresicon">CategoryResIcon</string>
+    <string name="book">Book</string>
+    <string name="phone">phone</string>
+    <string name="_15_50">15:50</string>
+    <string name="_2000_00">- 2000.00</string>
+    <string name="resbgr">Resbgr</string>
+    <string name="june_22">JUNE 22</string>
+    <string name="no_record_for_today">今天还没有记录</string>
+
+
+    <string name="todayintros">((TextView) rootView.findViewById(R.id.sample1).findViewById(R.id.title)).setText(\"Sample 1\");             ((TextView) rootView.findViewById(R.id.sample2).findViewById(R.id.title)).setText(\"Sample 2\");              ExpandableTextView expTv1 = (ExpandableTextView) rootView.findViewById(R.id.sample1)                     .findViewById(R.id.expand_text_view);             ExpandableTextView expTv2 = (ExpandableTextView) rootView.findViewById(R.id.sample2)                     .findViewById(R.id.expand_text_view);              expTv1.setOnExpandStateChangeListener(new ExpandableTextView.OnExpandStateChangeListener() {                 @Override                 public void onExpandStateChanged(TextView textView, boolean isExpanded) {                     Toast.makeText(getActivity(), isExpanded ? \"Expanded\" : \"Collapsed\", Toast.LENGTH_SHORT).show();                 }             });              expTv1.setText(getString(R.string.dummy_text1));             expTv2.setText(getString(R.string.dummy_text2));              return rootView;</string>
+</resources>

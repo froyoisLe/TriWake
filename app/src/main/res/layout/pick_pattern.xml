@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="212dp"
+    android:layout_gravity="center"
+    android:padding="6dp"
+    android:id="@+id/pick_pattern"
+    android:background="@drawable/bg_pickcolor"
+    android:orientation="vertical"
+    android:layout_height="52dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="UselessParent">
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/pattern_1"
+            android:src="@drawable/pattern1_circle"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:onClick="patternChoose"
+            android:tag="pattern1"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights"
+            android:contentDescription="pattern" />
+
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/pattern_2"
+            android:src="@drawable/pattern2_circle"
+            android:padding="4dp"
+            android:onClick="patternChoose"
+            android:tag="pattern2"
+            android:contentDescription="pattern"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/pattern_3"
+            android:src="@drawable/pattern3_circle"
+            android:padding="4dp"
+            android:contentDescription="pattern"
+            android:onClick="patternChoose"
+            android:tag="pattern3"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/pattern_4"
+            android:src="@drawable/pattern4_circle"
+            android:padding="4dp"
+            android:contentDescription="pattern"
+            android:onClick="patternChoose"
+            android:tag="pattern4"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:background="@drawable/circle_inactive"
+            android:id="@+id/pattern_5"
+            android:src="@drawable/pattern5_circle"
+            android:padding="4dp"
+            android:onClick="patternChoose"
+            android:tag="pattern5"
+            android:contentDescription="pattern"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

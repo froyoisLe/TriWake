@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MaterialSearchBarLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="mt_searchBarColor">@color/search_bgr</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/white_pressed</item>
+        <item name="mt_searchIconTint">@color/white_pressed</item>
+        <item name="mt_clearIconTint">@color/white_pressed</item>
+        <item name="mt_menuIconTint">@color/white_pressed</item>
+        <item name="mt_backIconTint">@color/white_pressed</item>
+        <item name="mt_textCursorTint">@color/blue_grey_inactive</item>
+        <item name="mt_textColor">@color/white_pressed</item>
+        <item name="mt_hintColor">@color/white_pressed</item>
+        <item name="mt_placeholderColor">@color/white_pressed</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/floating_top_bar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5.5dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_rect_white"
+        android:elevation="5dp"
+        android:padding="12dp"
+        app:bnc_mode="spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#6f79a8"
+            app:bt_colorInactive="#9499b7"
+            app:bt_shapeColor="#e8eaf6"
+            app:bt_icon="@drawable/ic_intros_purple_200_24dp"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_title="@string/home"
+            />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#ba6b6c"
+            app:bt_colorInactive="#cb9ca1"
+            app:bt_shapeColor="#ffebee"
+            app:bt_icon="@drawable/ic_todo_red_200_24dp"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_title="@string/todo" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#4f9a94"
+            app:bt_colorInactive="#82ada9"
+            app:bt_icon="@drawable/ic_note_indigo_200_24dp"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="#e0f2f1"
+            app:bt_title="@string/notes" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/account_dark"
+            app:bt_colorInactive="@color/account_primary"
+            app:bt_icon="@drawable/ic_account_blue_grey_300_24dp"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="@color/account_light"
+            app:bt_title="@string/account" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

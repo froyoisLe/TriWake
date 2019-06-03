@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E6201231</color>
+    <color name="colorPrimaryDark">#E8281E3F</color>
+    <color name="colorWhite">#F7F8F7F7</color>
+    <color name="colorAccent">#D09AA06E</color>
+    <color name="colorwg">#EDA2B9B9</color>
+    <color name="colorShadow">#eeeeee</color>
+    <color name="colorDname">#F7C9C4C4</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_grey_active">#607d8b</color>
+    <color name="grey_active">#BE9E9E9E</color>
+    <color name="red_inactive">#e57373</color>
+    <color name="blue_grey_inactive">#B26B717E</color>
+    <color name="gery_inactive">#e0e0e0</color>
+    <color name="default_inactive">#78909c</color>
+    <color name="red_bg_light">#ffebee</color>
+    <color name="purple_bg_light">#f3e5f5</color>
+    <color name="blue_bg_light">#e3f2fd</color>
+    <color name="green_bg_light">#e8f5e9</color>
+    <color name="blue_grey_bg_light">#eceff1</color>
+    <color name="yellow_bg_light">#fffde7</color>
+    <color name="orange_bg_light">#fff3e0</color>
+    <color name="grey_bg_light">#fafafa</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <color name="colorPrimary_text">#212121</color>
+    <color name="colorSecondary_text">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="gray">#bbafb4</color>
+    <color name="black">#343232</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#EEEDF0</color>
+    <color name="name_bg">#12BBAFB4</color>
+
+
+    <color name="diary">#607596</color>
+    <color name="diary_circle">#7D8696</color>
+    <color name="diary_dark">#ED61789C</color>
+    <color name="diary_darker">#D3596A86</color>
+    <color name="diary_light">#E7ECF5</color>
+    <color name="diary_lighter">#EEF1F7</color>
+    <color name="diary_primary">#B9708BB8</color>
+    <color name="diary_fab_bg">#70D1E0F8</color>
+    <color name="diary_lighter2">#85DCE0EB</color>
+
+
+    <color name="intros_fab">#B2D9DDF5</color>
+    <color name="intros_dark">#E69499B7</color>
+    <color name="intros_light">#9AE5E8F8</color>
+    <color name="intros_primary">#B29A9FC0</color>
+    <color name="intros_darker">#E6767A92</color>
+    <color name="intros_lighter">#EBF1F2F7</color>
+    <color name="intros_lighter2">#85E9EAF1</color>
+
+
+    <color name="todo_dark">#CDba6b6c</color>
+    <color name="todo_light">#9Affebee</color>
+    <color name="todo_primary">#B2cb9ca1</color>
+    <color name="todo_darker">#CD975859</color>
+    <color name="todo_lighter">#9AFFF5F6</color>
+    <color name="todo_darker2">#9CA05153</color>
+
+    <color name="note_dark">#CD4f9a94</color>
+    <color name="note_dark_bg">#E624423F</color>
+    <color name="note_light">#9Ae0f2f1</color>
+    <color name="note_primary">#B282ada9</color>
+    <color name="note_darker">#CD386B67</color>
+    <color name="note_lighter">#85E9F1F1</color>
+
+    <color name="account_primary">#BF7C7346</color>
+    <color name="account_light">#EBDBD7C6</color>
+    <color name="account_dark">#CD6B6444</color>
+    <color name="account_lighter">#85E4E3DF</color>
+    <color name="account_noalpha">#E4E3DF</color>
+    <color name="account_darker">#CD5E573C</color>
+    <color name="ac_circle_fill">#D27E7550</color>
+
+    <color name="smile">#D3596A86</color>
+    <color name="intro_bg">#DFEBECF0</color>
+    <color name="account_lighter2">#7AF3F1EB</color>
+    <color name="accout_bg">#758A8058</color>
+    <color name="menu_bgr">#3BD2D4E2</color>
+    <color name="search_bgr">#16F3F3FA</color>
+    <color name="todo_bg">#FAF6F6</color>
+    <color name="todo_state_grey">#E88A8585</color>
+    <color name="note_darkerbg">#A45F948E</color>
+    <color name="account_bg">#90B4B4A7</color>
+
+    <color name="darkgrey">#ED707272</color>
+    <color name="dialog_bg">#FAEBE7E7</color>
+    <color name="color_black">#333333</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_red">#EF4B4A</color>
+    <color name="color_pink">#F06F8E</color>
+    <color name="color_yellow">#F8DA58</color>
+    <color name="color_orange">#F6911F</color>
+    <color name="color_skyblue">#75CEE0</color>
+    <color name="color_oceanblue">#237197</color>
+    <color name="color_lightgreen">#66C08A</color>
+    <color name="color_grassgreen">#5FA044</color>
+    <color name="color_darkgreen">#004F49</color>
+    <color name="color_purple">#654B94</color>
+    <color name="pick_bg">#D3DCE9DF</color>
+    <color name="none">#00000000</color>
+    <color name="top_menu">#B5CACFEB</color>
+    <color name="bottom_menu">#DDF0EAEA</color>
+    <color name="choose_bg">#F2635B46</color>
+    <color name="color_bg">#DDD5BB8F</color>
+    <color name="rec_bg">#66F5F5E6</color>
+
+</resources>
+

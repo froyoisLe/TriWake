@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@color/diary_light"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".ui.diary.DiaryActivity"
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/diary_light"
+        >
+        <LinearLayout
+            android:id="@+id/common_title_ll"
+            android:background="@color/diary_dark"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                style="@style/MaterialSearchBarLight"
+                app:mt_speechMode="false"
+                android:elevation="0dp"
+                app:mt_maxSuggestionsCount="5"
+                app:mt_navIconEnabled="false"
+                app:mt_placeholder="           "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diary_searchBar"
+                >
+            </com.mancj.materialsearchbar.MaterialSearchBar>
+            <ImageView
+                android:id="@+id/common_iv_test"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:id="@+id/item_first"
+                      android:layout_marginTop="20dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/diary_light"
+                      android:orientation="vertical"
+                      android:paddingRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/diary_light"
+                android:orientation="horizontal"
+                android:paddingLeft="10.8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/main_iv_circle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_face"
+                    />
+
+                <TextView
+                    android:textIsSelectable="true"
+                    android:background="@drawable/bg_title_text"
+                    android:id="@+id/diary_tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:text="2017年01月18日"
+                    android:textSize="14sp"
+                    android:textColor="@color/diary_dark"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/linear_style"
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_ll_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:id="@+id/diary_tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/diary_light"
+                        android:lineSpacingExtra="4dp"
+                        android:paddingLeft="33dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="今天，你什么都还没写喔..."
+                        android:textColor="@color/diary_circle"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_rv_show_diary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/diary_fab_enter_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|bottom"
+    android:layout_marginLeft="30dp"
+    android:layout_marginBottom="30dp"
+    android:src="@drawable/ic_add_light_green_50_36dp"
+    app:borderWidth="2dp"
+    app:elevation="2dp"
+    app:fabSize="auto"
+    android:clickable="true"
+    app:rippleColor="@color/diary_darker"
+    android:layout_alignParentBottom="true"
+    app:backgroundTint="@color/diary_dark" />
+</RelativeLayout>

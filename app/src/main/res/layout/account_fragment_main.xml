@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/account_lighter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/day_text"
+            android:paddingStart="35dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00000000"
+            android:text="@string/june_22"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            />
+
+        <ListView
+            android:paddingTop="14dp"
+            android:layout_below="@+id/day_text"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/no_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/no_record_for_today"
+            android:textColor="@color/account_darker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>

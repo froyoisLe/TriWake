@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/ac_fg"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        app:elevation="0dp"
+        android:background="@mipmap/account_main_bgr"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/expense_text"
+                android:text="支"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="132dp"
+                android:layout_marginEnd="120dp"
+                android:textColor="@color/white_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="收"
+                android:id="@+id/income_text"
+                android:textColor="@color/white_pressed"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="132dp"
+                android:layout_marginEnd="150dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="总"
+                android:textColor="@color/white_pressed"
+                android:id="@+id/account_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="132dp"
+                android:layout_marginRight="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/expense_all"
+                android:text="Exp"
+                android:textColor="@color/account_light"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Inc"
+                android:textColor="@color/account_light"
+                android:id="@+id/income_all"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/account_all"
+                android:src="@drawable/ic_account_balance_lime_100_24dp"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/date_text"
+                android:textStyle="bold"
+                android:text=""
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_marginTop="120dp"
+                android:textSize="0sp"
+                android:background="@drawable/bgr_account_theme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white_pressed"/>
+
+            <RelativeLayout
+                android:layout_marginTop="70dp"
+                android:id="@+id/amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <com.robinhood.ticker.TickerView
+                    android:paddingTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/amount_text"
+                    android:textSize="42dp"
+                    android:elevation="3dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:elevation="3dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="42dp"
+                    android:layout_toEndOf="@+id/amount_text"
+                    android:layout_toRightOf="@+id/amount_text"
+                    android:layout_alignTop="@+id/amount_text"
+                    android:id="@+id/currency_text"
+                    android:text="￥"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="125dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="36.5dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/grey_active"
+                    android:elevation="1dp"></View>
+
+                <TextView
+                    android:id="@+id/day_text"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/account_bg"
+                    android:text="@string/june_22"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <include layout="@layout/account_content_main"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:rippleColor="@color/account_dark"
+        android:src="@drawable/ic_add_light_green_50_36dp"
+        app:backgroundTint="@color/account_darker"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|end" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/date_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="30dp"
+        app:elevation="5dp"
+        app:fabSize="auto"
+        android:clickable="true"
+        android:layout_marginBottom="30dp"
+        app:rippleColor="@color/account_primary"
+        android:src="@drawable/ic_date_range_lime_100_24dp"
+        app:backgroundTint="@color/account_darker" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

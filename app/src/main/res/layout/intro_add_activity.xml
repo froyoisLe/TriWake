@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/intros_lighter"
+    tools:context=".ui.Intros.AddIntrosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@color/intros_dark"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/intro_iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+                <TextView
+                    android:id="@+id/common_tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="吾日三省吾身"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/common_iv_test"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/intsp_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:text="写下今天的反思"
+            android:textColor="@color/intros_darker" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="8"
+            android:orientation="vertical">
+
+            <site.isleti.triwake.widget.LinedEditText
+                android:id="@+id/intrsp_add_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="6dp"
+                android:paddingBottom="8dp"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/shape_add_diary_title"
+                android:elevation="8dp"
+                android:enabled="true"
+                android:gravity="top"
+                android:lineSpacingExtra="5dp"
+                android:minLines="18"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:scrollbars="vertical"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:elevation="3dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ints_cancel"
+                    android:layout_width="@dimen/diary_icon_size"
+                    android:layout_height="@dimen/diary_icon_size"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_intro_fab"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cancel" />
+                <ImageButton
+                    android:elevation="3dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ints_save"
+                    android:layout_width="@dimen/diary_icon_size"
+                    android:layout_height="@dimen/diary_icon_size"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_intro_fab"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_save_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+

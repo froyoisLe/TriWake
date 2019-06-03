@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_bgr"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <ImageView
+            android:id="@+id/bling"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/bling" />
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/appname"
+            android:padding="12dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_triwake"
+            android:fontFamily="sans-serif-medium"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:text="@string/triwake"
+            android:shadowColor="@color/colorShadow"
+            android:textColor="@color/colorDname"
+            android:textSize="42sp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/appname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.romainpiel.shimmer.ShimmerTextView
+                android:id="@+id/wrsxws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/wrsxws"
+                android:shadowDx="2"
+                android:shadowDy="1"
+                android:shadowRadius="4"
+                android:textColor="@color/colorDname"
+                android:shadowColor="@color/colorShadow"
+                android:textFontWeight="3"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorDname"
+                android:layout_below="@id/wrsxws"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+    android:layout_weight="2"
+    >
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/laodingIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="CubeTransitionIndicator"
+            app:indicatorColor= "@color/colorwg"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/laodingText"
+            android:text="Loading"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/laodingIcon"
+            android:textColor="@color/colorwg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/Laoding..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/cr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CopyRight"
+        android:textColor="@color/colorwg"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-medium"/>
+
+</RelativeLayout>
+
+</LinearLayout>
